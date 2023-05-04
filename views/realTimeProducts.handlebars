@@ -1,0 +1,34 @@
+<div>
+    <form id="product-form">
+  <label for="title">title:</label>
+  <input type="text" id="title" name="title" required>
+
+  <label for="description">description:</label>
+  <textarea id="description" name="description" required></textarea>
+
+  <label for="price">price:</label>
+  <input type="number" id="price" name="price" step="0.01" required>
+
+  <label for="category">category:</label>
+  <select id="category" name="category" required>
+  </select>
+
+  <label for="stock">Stock:</label>
+  <input type="number" id="stock" name="stock" required>
+
+  <label for="code">code:</label>
+  <input type="text" id="code" name="code" required>
+
+  <button type="submit">create product</button>
+</form>
+
+<form id="delete-product-form">
+  <label for="product-id">ID del producto:</label>
+  <input type="text" id="product-id" name="product-id" required>
+  <button type="submit">Eliminar producto</button>
+</form>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/router/view.routers.js"></script>
+
